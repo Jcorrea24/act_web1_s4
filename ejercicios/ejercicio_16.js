@@ -1,6 +1,3 @@
-function invertir(cadena) {
-    if (cadena.length <= 1) return cadena;
-    return invertir(cadena.slice(1)) + cadena[0];
-}
+const sumar = (...numeros) => numeros.reduce((acc, num) => acc + num, 0);
 
-console.log(invertir("hola"));
+console.log(sumar(1, 2, 3, 4));
